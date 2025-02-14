@@ -1,0 +1,63 @@
+.login-card {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.login-card .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.login-card input {
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.login-card input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+.login-card .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.login-card .btn-primary {
+    background-color: #0056b3;
+    border: none;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #004080;
+}
+
+.login-card .btn-secondary {
+    background-color: #dc3545;
+    border: none;
+}
+
+.login-card .btn-secondary:hover {
+    background-color: #c82333;
+}
+
+.login-card .text-primary {
+    color: #0056b3;
+}
+
+.login-card .text-secondary {
+    color: #6c757d;
+}
+
+a.text-primary:hover {
+    text-decoration: underline;
+}
+
+a.text-secondary:hover {
+    text-decoration: underline;
+}
