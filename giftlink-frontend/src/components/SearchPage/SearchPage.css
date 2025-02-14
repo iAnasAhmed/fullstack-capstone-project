@@ -1,26 +1,128 @@
-/* Task 1: Style the search input field */
-.search-input {
-    /* Insert specific CSS properties here */
+#searchQuery {
+    width: 75%;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
 }
 
-/* Task 2: Style the search button */
-.search-button {
-    /* Insert specific CSS properties here */
+.btn-primary {
+    width: 20%;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-/* Task 3: Customize dropdown filters */
-.dropdown-filter {
-    /* Insert specific CSS properties here */
+.btn-primary:hover {
+    background-color: #0056b3;
 }
 
-/* Task 4: Style the age range slider */
-.age-range-slider {
-    /* Insert specific CSS properties here */
+#categorySelect,
+#conditionSelect {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
 }
 
-/* Task 5: Enhance search results cards appearance */
-.search-results-card {
-    /* Insert specific CSS properties here */
+#ageRange {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-/* Additional placeholders for tasks 6 to 10 */
+.search-results .card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.alert-info {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.search-results .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    #searchQuery {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    .search-results .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+.container {
+    padding: 2rem;
+}
+
+.filter-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-section h5 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.search-results {
+    margin-top: 1.5rem;
+}
+
+.card-footer {
+    background-color: #ffffff;
+    border-top: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-footer .btn-primary {
+    width: auto;
+    padding: 0.5rem 1rem;
+}
