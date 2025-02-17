@@ -1,14 +1,15 @@
 /*jshint esversion: 8 */
 
 const { MongoClient } = require('mongodb');
+require('dotenv').config();
 
-const URL = 'your_mongodb_connection_string';
+const URL = process.env.MONGO_URL;
 const client = new MongoClient(URL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function connectToDatabase() {
     try {
         await client.connect();
-        const db = client.db('your_database_name'); 
+        const db = client.db('gifts');
         return db;
     } catch (e) {
         console.error('Error connecting to MongoDB:', e);
